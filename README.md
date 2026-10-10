@@ -1,7 +1,7 @@
 ☕ Brew & Bean — Coffee Shop Website
 A modern, coffee-themed website built with HTML and CSS as a front-end development mini project.
 Brew & Bean features a warm color palette, an elegant coffee menu, and a responsive layout designed to showcase a fictional local coffee shop.
-
+Live Demo: https://brew-coffee-shop-two.vercel.app/
 ✨ Features
 Home section — Welcoming hero section with a coffee-themed background.
 Coffee menu — Six coffee items with images, descriptions, and prices.
