@@ -2,6 +2,7 @@
 A modern, coffee-themed website built with HTML and CSS as a front-end development mini project.
 Brew & Bean features a warm color palette, an elegant coffee menu, and a responsive layout designed to showcase a fictional local coffee shop.
 Live Demo: https://brew-coffee-shop-two.vercel.app/
+
 ✨ Features
 Home section — Welcoming hero section with a coffee-themed background.
 Coffee menu — Six coffee items with images, descriptions, and prices.
@@ -11,6 +12,7 @@ Contact section — Displays location and opening hours.
 Navigation bar — Links to the main sections of the website.
 Hover effects — Adds interactive visual feedback to links and buttons.
 Coffee-inspired design — Uses warm brown, caramel, and cream colors.
+
 🛠️ Technologies Used
 HTML5
 CSS3
@@ -19,12 +21,12 @@ CSS Grid
 Media queries
 Google Fonts
 Unsplash images
+
 📂 Project Structure
 Brew-and-Bean/
 │
 ├── index.html
 ├── brew_Coffee.css
-├── screenshot.png
 └── README.md
 
 🚀 How to Run Locally
@@ -42,12 +44,14 @@ Styling cards, images, navigation, and buttons.
 Using hover effects and CSS transitions.
 Organizing styles for different website sections.
 Practicing responsive web design with media queries.
+
 🔮 Future Improvements
 Improve responsiveness across more screen sizes.
 Add a mobile navigation menu.
 Add a functional contact or reservation form.
 Improve accessibility and keyboard navigation.
 Add links to real social media profiles and directions.
+
 👩‍💻 Author
 Created as a front-end development mini project while learning HTML and CSS.
 Feel free to explore the code and share suggestions for improvement!
