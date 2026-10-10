@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -35,10 +37,33 @@ li a{
     text-decoration: none;
     font-size: 1.25rem;
     margin-right: 20px;
+    display: inline-block;
+    transition: color 0.3s ease,
+    transform 0.3s ease;
 }
 li a:hover{
     color: #C08552;
+    transform: translateY(-2px);
 } 
+#home > div > * {
+    animation: fadeInUp 0.7s ease both;
+}
+
+#home > div > *:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#home > div > *:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+#home > div > *:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#home > div > *:nth-child(4) {
+    animation-delay: 0.55s;
+}
 #home{
     display: flex;
     color: white;
@@ -81,9 +106,16 @@ li a:hover{
     border: white solid 1px;
     border-radius: 10px;
     font-size: 1rem;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 #home div a:hover{
-      background-color:#C08552 ;
+      background-color: #C08552;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 #menu{
     background-color: #FFF8F0;
@@ -129,12 +161,22 @@ li a:hover{
     font-size: 1.25rem;
     font-weight: bold;
     background-color: white;
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+.menu-grid article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(75, 46, 43, 0.15);
 }
 .menu-grid article img{
     width: 100%;
     height: 220px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+    transition: transform 0.5s ease;
+}
+.menu-grid article:hover img {
+    transform: scale(1.04);
 }
 .menu-grid article div{
    width: 100%;
@@ -210,6 +252,7 @@ li a:hover{
 #about a:hover {
     background-color: #C08552;
     color: white;
+    
 }
 
 main > section:nth-of-type(3) {
@@ -328,11 +371,16 @@ main > section:nth-of-type(3) article p {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
     
 }
 
 #contact a:hover {
     background-color: #C08552;
+    background-color: #C08552;
+    transform: translateY(-3px);
 }
 .features-heading{
     background-color: #30201E;
@@ -375,6 +423,16 @@ main > section:nth-of-type(3) article p {
     border: #C08552 1px solid;
     border-radius: 10px;
     flex-wrap: wrap;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.features article:hover {
+    transform: translateY(-8px);
+    background-color: #593833;
+    border-color: #C08552;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 .features article p{
     color: white;
@@ -411,6 +469,8 @@ footer > div:nth-child(2) {
 footer a {
     color: #FFF8F0;
     text-decoration: none;
+     transition: color 0.3s ease,
+                transform 0.3s ease;
 }
 
 footer a:hover {
@@ -424,7 +484,17 @@ footer > p {
     text-align: center;
     color: #D8C6B8;
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 @media (max-width: 768px) {
     .menu-grid {
         grid-template-columns: 1fr;
